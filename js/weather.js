@@ -28,7 +28,10 @@ function updateWeather(){
         img.onload = function () {
             ctx.drawImage(img, 0, 0, 150, 150);
         }
-        // var windSpeed = json.wind.speed;
+        var windSpeed = json.wind.speed;
+        var weatherInfo = document.getElementById("WeatherInfo");
+        weatherInfo.innerHTML="";
+        weatherInfo.appendChild(document.createTextNode(windSpeed))
     });
     var numDays=5;
     $.getJSON("http://api.openweathermap.org/data/2.5/forecast/daily?q="+self.currLoc+"&units=imperial&cnt="+numDays+"&APPID=07ba01a63aa8ffa15eccc5142a1c676b",function(json) {
@@ -58,6 +61,12 @@ function updateForecast(days){
     addForecast(days, eList, 0);
 }
 
+function addChild(div, part){
+    var td = document.createElement("td");
+    td.appendChild(part);
+    div.appendChild(td);
+}
+
 function addForecast(days, eList, index){
     var curr = days[index];
     var textContent = document.createElement("p");
@@ -67,16 +76,17 @@ function addForecast(days, eList, index){
     hilo.innerHTML = curr.lo +"-"+curr.hi+"&deg;";
     var image = new Image();
     image.src=curr.src;
-    var div = document.createElement("div");
+    var div = document.createElement("tr");
     image.onload=function () {
-        canvas.width=70;
+        canvas.width=50;
         canvas.height=50;
         var ctx = canvas.getContext("2d");
-        ctx.drawImage(image,10,0,50,50);
-        div.appendChild(hilo);
-        div.appendChild(canvas);
-        div.appendChild(textContent);
-        div.appendChild(document.createElement("br"));
+        ctx.drawImage(image,0, 0,50,50);
+
+        addChild(div, hilo);
+        addChild(div, canvas);
+        addChild(div, textContent);
+
         eList.appendChild(div);
         if(index+1<days.length) {
             addForecast(days, eList, index + 1);

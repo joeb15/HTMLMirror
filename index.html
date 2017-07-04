@@ -1,11 +1,10 @@
-<!doctype html>
-<html class="no-js" lang="">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Magic Mirror</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=768, height=1360, initial-scale=1">
+        <meta name="viewport", width=720, height=1080, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -14,103 +13,129 @@
         <link rel="stylesheet" href="css/main.css">
         <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
         <style>
-
-            body{
-                -webkit-text-fill-color: white;
-                -webkit-text-stroke-color: white;
+            body, tr, td, p{
                 background-color: black;
+                -webkit-text-stroke-color: white;
+                -webkit-text-fill-color: white;
+                /*border: solid 1px white;*/
+                margin: 0%;
+                padding: 0%;
+                font-family: Arial;
+                line-height: 85%;
             }
-            p, pre {
-                margin: 0;
-                padding: 0;
+            table{
+                margin-bottom: 10px;
+                width:100%;
             }
-            #CurrTemp{
-                float:right;
-                top:0px;
-                right:0px;
-                font: 150px Arial;
+
+            /*TOP ROW*/
+            #TimeDate{
+                float:left;
+                font-size: 50px;
             }
-            .Time{
+            #WeatherInfo{
+                float: right;
+                font-size: 50px;
+            }
+
+            /*SECOND ROW*/
+            #TimeTime{
                 float: left;
-                font: 35px Arial;
+                font-size: 120px;
             }
             #TimeTimeDiv{
-                width: 2ch;
-                margin-left: 5px;
-            }
-            #TimeDate{
                 float: left;
-                font: 50px Arial;
-                white-space:nowrap;
-                position: fixed;
-                top:0;
-                left: 0;
+                font-size: 60px;
             }
-            #TimeTime{
-                margin-top: 40px;
-                float:left;
-                white-space:nowrap;
-                font: 100px Arial;
-            }
-            #TimeTimeSeconds{
-                margin-top: 60px;
-            }
-            .Events{
-                font: 35px Arial;
-                position: fixed;
-                bottom: 0px;
-            }
-            #EventsSummary {
-                right: 5px;
-                text-align: right;
-            }
-            #EventsTime{
-                left: 5px;
-                text-align: left;
-            }
-            #Forecast{
-                font: 35px Arial;
-                line-height: 50px;
-                width: 100%;
-            }
-            #Forecast > div > p, #Forecast > div > canvas{
+            #CurrTemp{
                 float: right;
-                display: inline;
-                white-space: nowrap;
-            }
-            .Weather{
-                float: right;
+                font-size: 120px;
             }
             #CurrWeatherIcon{
+                float: right;
+                height: 75%;
+                width: 75%;
+            }
+
+            /*Forecast*/
+            #Forecast > tr > td{
+                float: right;
+                font-size: 45px;
+                line-height: 85%;
+                align-content: center;
+            }
+            #Forecast{
                 margin-top: 20px;
-                width: 150px;
-                height: 150px;
+            }
+
+            /*Events*/
+            #Events > td > table > tr > td > p{
+                font-size: 35px;
+                line-height: 100%;
+            }
+            #Events{
+                width:720px;
+                bottom:0px;
+                left: 0px;
+                position: fixed;
+            }
+            #EventSummary{
+                right: 0px;
+                bottom: 0px;
+                position: fixed;
+                text-align: right;
+            }
+
+            /*Waveform*/
+            #Waveform{
+                position:fixed;
+                top:0px;
+                left:0px;
             }
         </style>
     </head>
     <body>
-        <!--[if lt IE 8]>
+    <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <button id="authorize-button" style="display: none;width: 100%;height: 100%;">Authorize</button>
+        <button id="authorize-button" style="display: none;">Authorize</button>
+        <table>
+            <tr>
+                <td>
+                    <p id="TimeDate">TimeDate</p>
+                </td>
+                <td>
+                    <p id="WeatherInfo">WeatherInfo</p>
+                </td>
+            </tr>
+        </table>
 
-        <p id="CurrTemp">--</p>
-        <canvas class="Weather" id="CurrWeatherIcon"></canvas>
+        <table>
+            <tr>
+                <td>
+                    <p id="TimeTime">TimeTime</p>
+                </td>
+                <td>
+                    <div id="TimeTimeDiv">
+                        <p id="TimeTimeSeconds">10</p>
+                        <p id="TimeTimeAMPM">AM</p>
+                    </div>
+                </td>
+                <td>
+                    <canvas id="CurrWeatherIcon"></canvas>
+                </td>
+                <td>
+                    <p id="CurrTemp">--</p>
+                </td>
+            </tr>
+        </table>
 
-        <p id="TimeDate">TimeDate</p>
-        <p class="Time" id="TimeTime">TimeTime</p>
-        <div class="Time" id="TimeTimeDiv">
-            <p class="Time" id="TimeTimeSeconds">10</p>
-            <p class="Time" id="TimeTimeAMPM">AM</p>
-        </div>
+        <table id="Forecast"></table>
+        <table><tr id="Events"></tr></table>
 
-        <pre id="Forecast"></pre>
-
-        <pre class="Events" id="EventsSummary"></pre>
-        <pre class="Events" id="EventsTime"></pre>
-
+        <canvas id="Waveform"></canvas>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
@@ -119,9 +144,10 @@
         <script src="js/events.js"></script>
         <script src="js/weather.js"></script>
         <script src="js/time.js"></script>
+        <script src="js/perlinNoise.js"></script>
+        <script src="js/waveform.js"></script>
         <script src="js/main.js"></script>
         <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
-
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

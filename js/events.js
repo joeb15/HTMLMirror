@@ -6,32 +6,45 @@ var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov",
 
 
 function onEventListUpdated(events) {
-    updateEventSummaries(events);
     updateEventTimes(events);
+    updateEventSummaries(events);
 }
 
 function updateEventSummaries(events){
     var processed = [];
-    var eList = document.getElementById("EventsSummary");
-    eList.innerHTML="";
+    var eList = document.getElementById("Events");
+    var textContent = document.createElement("td");
+    textContent.setAttribute("id","EventSummary");
     if(events.length>0){
         for (i = 0; i < events.length && processed.length<5; i++) {
             var event = events[i];
             if(processed.indexOf(event.summary)==-1){
                 var message = event.summary;
-                var textContent = document.createTextNode(message + '\n');
-                eList.appendChild(textContent);
+                var p = document.createElement("p");
+                p.innerHTML=message;
+                add(textContent, p);
                 processed.push(event.summary);
             }
         }
     }
+    eList.appendChild(textContent);
+}
+
+function add(td, p){
+    var table = document.createElement("table");
+    var tr = document.createElement("tr");
+    var td2 = document.createElement("td");
+    td2.appendChild(p);
+    tr.appendChild(td2);
+    table.appendChild(tr);
+    td.appendChild(table);
 }
 
 function updateEventTimes(events){
     var processed = [];
-    var eList = document.getElementById("EventsTime");
-    var children = eList.childNodes;
+    var eList = document.getElementById("Events");
     eList.innerHTML="";
+    var textContent = document.createElement("td");
     if(events.length>0){
         for (i = 0; i < events.length && processed.length<5; i++) {
             var event = events[i];
@@ -47,10 +60,12 @@ function updateEventTimes(events){
                 else
                     ampm="pm";
                 message = message+ " @ "+hr + " " + ampm;
-                var textContent = document.createTextNode(message + '\n');
-                eList.appendChild(textContent);
+                var p = document.createElement("p");
+                p.innerHTML=message;
+                add(textContent, p);
                 processed.push(event.summary);
             }
         }
     }
+    eList.appendChild(textContent);
 }
