@@ -4,7 +4,7 @@
 
 var waveformCanvas = document.getElementById("Waveform");
 waveformCanvas.width=720;
-waveformCanvas.height=720;
+waveformCanvas.height=1280;
 var waveformContext = waveformCanvas.getContext("2d");
 var width = 720;
 var height = 1280;

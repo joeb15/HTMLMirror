@@ -18,14 +18,14 @@ function updateWeather(){
         // console.log(sunrise.getHours()+":"+sunrise.getMinutes());
         // console.log(sunset.getHours()+":"+sunset.getMinutes());
         var canvas = document.getElementById("CurrWeatherIcon");
-        canvas.width=150;
-        canvas.height=150;
+        canvas.width=100;
+        canvas.height=100;
         var ctx = canvas.getContext("2d");
         var img = new Image();
         img.src = "img/"+json.weather[0].icon+"_bw.png";
         img.src = img.src.replace("n_", "d_");
         img.onload = function () {
-            ctx.drawImage(img, 0, 0, 150, 150);
+            ctx.drawImage(img, 0, 0, 100, 100);
         }
         var windSpeed = json.wind.speed;
         var weatherInfo = document.getElementById("WeatherInfo");

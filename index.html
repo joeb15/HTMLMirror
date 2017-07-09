@@ -42,18 +42,20 @@
             /*SECOND ROW*/
             #TimeTime{
                 float: left;
-                font-size: 120px;
+                font-size: 100px;
             }
             #TimeTimeDiv{
                 float: left;
-                font-size: 60px;
+                font-size: 50px;
             }
             #CurrTemp{
                 float: right;
-                font-size: 120px;
+                font-size: 100px;
             }
             #CurrWeatherIcon{
                 float: right;
+                width: 100px;
+                height: 100px;
             }
 
             /*Forecast*/
@@ -107,16 +109,16 @@
                 <td>
                     <p id="TimeDate">TimeDate</p>
                 </td>
-                <td>
+                <td style="float: right">
                     <p id="WeatherInfo">WeatherInfo</p>
                 </td>
-                <td>
+                <td style="float: right">
                     <canvas id="WindIcon"></canvas>
                 </td>
-                <td>
+                <td style="float: right">
                     <p id="SunsetTime"></p>
                 </td>
-                <td>
+                <td style="float: right">
                     <canvas id="SunsetIcon"></canvas>
                 </td>
             </tr>
@@ -124,20 +126,20 @@
 
         <table>
             <tr>
-                <td>
+                <td style="float: left">
                     <p id="TimeTime">TimeTime</p>
                 </td>
-                <td>
+                <td style="float: left">
                     <div id="TimeTimeDiv">
                         <p id="TimeTimeSeconds">10</p>
                         <p id="TimeTimeAMPM">AM</p>
                     </div>
                 </td>
-                <td>
-                    <canvas id="CurrWeatherIcon"></canvas>
-                </td>
-                <td>
+                <td style="float: right">
                     <p id="CurrTemp">--</p>
+                </td>
+                <td style="float: right">
+                    <canvas id="CurrWeatherIcon"></canvas>
                 </td>
             </tr>
         </table>
