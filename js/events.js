@@ -18,7 +18,7 @@ function updateEventSummaries(events){
     if(events.length>0){
         for (i = 0; i < events.length && processed.length<5; i++) {
             var event = events[i];
-            if(processed.indexOf(event.summary)==-1){
+            if(processed.indexOf(event.summary)==-1 && event.summary.indexOf("High")==-1){
                 var message = event.summary;
                 var p = document.createElement("p");
                 p.innerHTML=message;
@@ -48,7 +48,7 @@ function updateEventTimes(events){
     if(events.length>0){
         for (i = 0; i < events.length && processed.length<5; i++) {
             var event = events[i];
-            if(processed.indexOf(event.summary)==-1){
+            if(processed.indexOf(event.summary)==-1 && event.summary.indexOf("High")==-1){
                 var month = (event.date.getMonth());
                 month = months[month];
                 var day = (event.date.getDate()+1);

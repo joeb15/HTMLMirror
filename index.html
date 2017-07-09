@@ -33,9 +33,10 @@
                 float:left;
                 font-size: 50px;
             }
-            #WeatherInfo{
+            #WeatherInfo, #SunsetTime, #SunsetIcon{
                 float: right;
                 font-size: 50px;
+                line-height: 85%;
             }
 
             /*SECOND ROW*/
@@ -53,8 +54,6 @@
             }
             #CurrWeatherIcon{
                 float: right;
-                height: 75%;
-                width: 75%;
             }
 
             /*Forecast*/
@@ -96,18 +95,29 @@
     </head>
     <body>
     <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <p style="display: none" id="Sunset"></p>
+        <p style="display: none" id="Sunrise"></p>
         <!-- Add your site or application content here -->
+
         <button id="authorize-button" style="display: none;">Authorize</button>
-        <table>
+        <table style="margin: 0px">
             <tr>
                 <td>
                     <p id="TimeDate">TimeDate</p>
                 </td>
                 <td>
                     <p id="WeatherInfo">WeatherInfo</p>
+                </td>
+                <td>
+                    <canvas id="WindIcon"></canvas>
+                </td>
+                <td>
+                    <p id="SunsetTime"></p>
+                </td>
+                <td>
+                    <canvas id="SunsetIcon"></canvas>
                 </td>
             </tr>
         </table>
@@ -136,8 +146,9 @@
         <table><tr id="Events"></tr></table>
 
         <canvas id="Waveform"></canvas>
-
+        <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/gapi.js"></script>
@@ -146,6 +157,7 @@
         <script src="js/time.js"></script>
         <script src="js/perlinNoise.js"></script>
         <script src="js/waveform.js"></script>
+        <script src="js/commands.js"></script>
         <script src="js/main.js"></script>
         <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
 

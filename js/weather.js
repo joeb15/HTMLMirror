@@ -12,10 +12,9 @@ function updateWeather(){
         // var highTemp = Math.round(json.main.temp_max);
         // var lowTemp = Math.round(json.main.temp_min);
         document.getElementById("CurrTemp").innerHTML=temp+"&deg;";
-        // document.getElementById("HiTemp").innerHTML=highTemp;
-        // document.getElementById("LoTemp").innerHTML=lowTemp;
-        // var sunrise = new Date(json.sys.sunrise*1000);
-        // var sunset = new Date(json.sys.sunset*1000);
+        updateSunset(new Date(json.sys.sunset*1000));
+        updateSunrise(new Date(json.sys.sunrise * 1000));
+        drawWindIcon();
         // console.log(sunrise.getHours()+":"+sunrise.getMinutes());
         // console.log(sunset.getHours()+":"+sunset.getMinutes());
         var canvas = document.getElementById("CurrWeatherIcon");
@@ -31,7 +30,7 @@ function updateWeather(){
         var windSpeed = json.wind.speed;
         var weatherInfo = document.getElementById("WeatherInfo");
         weatherInfo.innerHTML="";
-        weatherInfo.appendChild(document.createTextNode(windSpeed))
+        weatherInfo.appendChild(document.createTextNode(Math.round(windSpeed)))
     });
     var numDays=5;
     $.getJSON("http://api.openweathermap.org/data/2.5/forecast/daily?q="+self.currLoc+"&units=imperial&cnt="+numDays+"&APPID=07ba01a63aa8ffa15eccc5142a1c676b",function(json) {
@@ -53,6 +52,53 @@ function updateWeather(){
         }
         updateForecast(forecast);
     });
+}
+
+function drawWindIcon(){
+    var canvas = document.getElementById("WindIcon");
+    canvas.width=50;
+    canvas.height=50;
+    var ctx = canvas.getContext('2d');
+    var sunset = new Image();
+    sunset.src="img/wind.png";
+    sunset.onload = function () {
+        ctx.drawImage(sunset,0,10,50,30);
+    }
+}
+
+function updateSunset(sunsetDate){
+    var h = sunsetDate.getHours();
+    if(h>12)
+        h-=12;
+    var m = sunsetDate.getMinutes();
+    var min = m;
+    if(min<10)
+        min="0"+min;
+    document.getElementById("SunsetTime").innerHTML=(h+":"+min).trim();
+    var canvas = document.getElementById("SunsetIcon");
+    canvas.width=50;
+    canvas.height=50;
+    var ctx = canvas.getContext('2d');
+    var sunset = new Image();
+    sunset.src="img/sunset.png";
+    sunset.onload = function () {
+        ctx.drawImage(sunset,0,0,50,50);
+    }
+    if(m<10)
+        m = "oh "+m;
+    var sunsetTime = h + " " + m;
+    document.getElementById("Sunset").innerHTML=sunsetTime;
+}
+
+function updateSunrise(sunriseDate){
+    var h = sunriseDate.getHours();
+    if(h>12)
+        h-=12;
+    var m = sunriseDate.getMinutes();
+    if(m<10)
+        m = "oh "+m;
+    var sunriseTime = h + " " + m;
+    document.getElementById("Sunrise").innerHTML=sunriseTime;
 }
 
 function updateForecast(days){

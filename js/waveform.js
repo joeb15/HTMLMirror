@@ -2,8 +2,6 @@
  * Created by joe on 7/3/17.
  */
 
-var running=false;
-var currFlag=-1;
 var waveformCanvas = document.getElementById("Waveform");
 waveformCanvas.width=720;
 waveformCanvas.height=720;
@@ -14,7 +12,6 @@ var noise = new ClassicalNoise(Math);
 var shouldClear=20;
 
 function renderWaveform() {
-    shouldRun();
     var num = 255-27*shouldClear;
     if(num<0)
         num=0;
@@ -29,7 +26,7 @@ function renderWaveform() {
     waveformContext.lineWidth = 5;
 
     waveformContext.beginPath();
-    if (!running) {
+    if (!responsiveVoice.isPlaying()) {
         waveformContext.lineTo(width / 2 - waveformWidth / 2, height / 2-maxHeight/2);
         waveformContext.lineTo(width / 2 + waveformWidth / 2, height / 2-maxHeight/2);
         shouldClear++;
@@ -45,21 +42,4 @@ function renderWaveform() {
 function func(x, maxHeight) {
     var ms = new Date().getTime();
     return noise.noise(x/100, ms/200,0)*maxHeight;
-}
-
-function clear(flag){
-    if(flag == currFlag){
-        running=false;
-    }
-}
-
-function shouldRun(){
-    $.ajax({
-        url: '/MirrorMirror/waveform',
-        success: function (data) {
-            var d = new Date();
-            var n = d.getTime();
-            running = data>n;
-        }
-    });
 }

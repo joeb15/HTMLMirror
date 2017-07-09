@@ -39,7 +39,9 @@ function listUpcomingEvents() {
     addCalendars([
         'primary',
         'en.usa#holiday@group.v.calendar.google.com',
-        '#contacts@group.v.calendar.google.com'],
+        '#contacts@group.v.calendar.google.com',
+        '93694c2fjlu127r1n8kokia0i0@group.calendar.google.com',
+        '2uavfqbsdod38j8vt4lhogtlao@group.calendar.google.com'],
         doneLoading
     );
 }
