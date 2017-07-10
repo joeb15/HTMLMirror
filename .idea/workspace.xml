@@ -359,7 +359,7 @@
       <workItem from="1499128748326" duration="16602000" />
       <workItem from="1499146166029" duration="4335000" />
       <workItem from="1499153802291" duration="30133000" />
-      <workItem from="1499647926432" duration="6000" />
+      <workItem from="1499647926432" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="Final Touches">
       <created>1498882579303</created>
@@ -396,11 +396,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499645352301</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Weather Sizing&#10;Event Summary Text Align">
+      <created>1499647940761</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1499647940761</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127719000" />
+    <option name="totallyTimeSpent" value="127732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1918" height="2102" extended-state="0" />
