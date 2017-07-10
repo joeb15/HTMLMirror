@@ -124,10 +124,10 @@ function addForecast(days, eList, index){
     image.src=curr.src;
     var div = document.createElement("tr");
     image.onload=function () {
-        canvas.width=50;
-        canvas.height=50;
+        canvas.width=35;
+        canvas.height=35;
         var ctx = canvas.getContext("2d");
-        ctx.drawImage(image,0, 0,50,50);
+        ctx.drawImage(image,0, 0, 35, 35);
 
         addChild(div, hilo);
         addChild(div, canvas);
