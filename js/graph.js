@@ -5,7 +5,7 @@ function updateImage(){
     var canvas = document.getElementById("Graph");
 
     canvas.width=window.innerWidth;
-    canvas.height=window.innerWidth/2;
+    canvas.height=window.innerHeight;
     var ctx = canvas.getContext('2d');
 
     var sunset = new Image();
