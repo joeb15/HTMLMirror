@@ -16,4 +16,4 @@ function updateImage(){
 }
 
 updateImage();
-setInterval(updateImage, 3000);
+setInterval(updateImage, 10000);
