@@ -4,15 +4,16 @@
 function updateImage(){
     var canvas = document.getElementById("Graph");
 
-    canvas.width=window.width;
-    canvas.height=window.width/2;
+    canvas.width=window.innerWidth;
+    canvas.height=window.innerWidth/2;
     var ctx = canvas.getContext('2d');
 
     var sunset = new Image();
     sunset.src="temperatureGraph.png";
     sunset.onload = function () {
-        ctx.drawImage(sunset, 0, 0, window.width, window.width/2);
+        ctx.drawImage(sunset, 0, 0, window.innerWidth, window.innerWidth/2);
     }
 }
+
 updateImage();
 setInterval(updateImage, 30000);
