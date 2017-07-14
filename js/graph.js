@@ -3,14 +3,15 @@
  */
 function updateImage(){
     var canvas = document.getElementById("Graph");
-    canvas.width=720;
-    canvas.height=1280;
+
+    canvas.width=window.width;
+    canvas.height=window.width/2;
     var ctx = canvas.getContext('2d');
 
     var sunset = new Image();
     sunset.src="temperatureGraph.png";
     sunset.onload = function () {
-        ctx.drawImage(sunset, 0, 0, 720, 360);
+        ctx.drawImage(sunset, 0, 0, window.width, window.width/2);
     }
 }
 updateImage();
