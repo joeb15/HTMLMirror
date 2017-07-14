@@ -13,5 +13,5 @@ function updateImage(){
         ctx.drawImage(sunset, 0, 0, 720, 360);
     }
 }
-
+updateImage();
 setInterval(updateImage, 30000);
