@@ -9,9 +9,12 @@ function updateImage(){
     var ctx = canvas.getContext('2d');
 
     var sunset = new Image();
-    sunset.src="temperatureGraph.png";
+    sunset.src="img/wind.png";
     sunset.onload = function () {
-        ctx.drawImage(sunset, 0, 0, window.innerWidth, window.innerWidth/2);
+        sunset.src="temperatureGraph.png";
+        sunset.onload = function () {
+            ctx.drawImage(sunset, 0, 0, window.innerWidth, window.innerWidth/2);
+        }
     }
 }
 
