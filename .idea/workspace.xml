@@ -53,8 +53,8 @@
       <file leaf-file-name="graph.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+            <state relative-caret-position="432">
+              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
                 <element signature="n#!!doc;n#updateImage#0" expanded="false" />
               </folding>
@@ -355,7 +355,7 @@
       <workItem from="1499146166029" duration="4335000" />
       <workItem from="1499153802291" duration="30133000" />
       <workItem from="1499647926432" duration="42000" />
-      <workItem from="1500017543680" duration="784000" />
+      <workItem from="1500017543680" duration="1393000" />
     </task>
     <task id="LOCAL-00001" summary="Final Touches">
       <created>1498882579303</created>
@@ -434,11 +434,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500018279007</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Make Graph Fill Screen (Fix#2)">
+      <created>1500018335282</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1500018335282</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128539000" />
+    <option name="totallyTimeSpent" value="129148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1918" height="2102" extended-state="4" />
@@ -483,7 +490,8 @@
     <MESSAGE value="Graph Update on Creation" />
     <MESSAGE value="Make Graph Fill Screen" />
     <MESSAGE value="Make Graph Fill Screen (Fix)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make Graph Fill Screen (Fix)" />
+    <MESSAGE value="Make Graph Fill Screen (Fix#2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make Graph Fill Screen (Fix#2)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -828,8 +836,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        <state relative-caret-position="432">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc;n#updateImage#0" expanded="false" />
           </folding>
