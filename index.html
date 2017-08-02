@@ -33,7 +33,7 @@
                 float:left;
                 font-size: 50px;
             }
-            #WeatherInfo, #SunsetTime, #SunsetIcon{
+            #SunsetTime, #SunsetIcon{
                 float: right;
                 font-size: 50px;
                 line-height: 85%;
@@ -54,8 +54,8 @@
             }
             #CurrWeatherIcon{
                 float: right;
-                width: 100px;
-                height: 100px;
+                width: 85px;
+                height: 85px;
             }
 
             /*Forecast*/
@@ -109,25 +109,6 @@
         <canvas id="Waveform"></canvas>
 
         <button id="authorize-button" style="display: none;">Authorize</button>
-        <table style="margin: 0px">
-            <tr>
-                <td>
-                    <p id="TimeDate">TimeDate</p>
-                </td>
-                <td style="float: right">
-                    <p id="WeatherInfo">WeatherInfo</p>
-                </td>
-                <td style="float: right">
-                    <canvas id="WindIcon"></canvas>
-                </td>
-                <td style="float: right">
-                    <p id="SunsetTime"></p>
-                </td>
-                <td style="float: right">
-                    <canvas id="SunsetIcon"></canvas>
-                </td>
-            </tr>
-        </table>
 
         <table>
             <tr>
@@ -148,13 +129,26 @@
                 </td>
             </tr>
         </table>
+        <table style="margin: 0px">
+            <tr>
+                <td>
+                    <p id="TimeDate">TimeDate</p>
+                </td>
+                <td style="float: right">
+                    <canvas id="SunsetIcon"></canvas>
+                </td>
+                <td style="float: right">
+                    <p id="SunsetTime"></p>
+                </td>
+            </tr>
+        </table>
 
         <table id="Forecast"></table>
         <table><tr id="Events"></tr></table>
 
-        <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+        <!--<script src='https://code.responsivevoice.org/responsivevoice.js'></script>-->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+        <!--<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/gapi.js"></script>
@@ -162,8 +156,8 @@
         <script src="js/weather.js"></script>
         <script src="js/time.js"></script>
         <script src="js/perlinNoise.js"></script>
-        <script src="js/waveform.js"></script>
-        <script src="js/commands.js"></script>
+        <!--<script src="js/waveform.js"></script>-->
+        <!--<script src="js/commands.js"></script>-->
         <script src="js/main.js"></script>
         <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
 

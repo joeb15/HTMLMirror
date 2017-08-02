@@ -14,23 +14,20 @@ function updateWeather(){
         document.getElementById("CurrTemp").innerHTML=temp+"&deg;";
         updateSunset(new Date(json.sys.sunset*1000));
         updateSunrise(new Date(json.sys.sunrise * 1000));
-        drawWindIcon();
+        // drawWindIcon();
         // console.log(sunrise.getHours()+":"+sunrise.getMinutes());
         // console.log(sunset.getHours()+":"+sunset.getMinutes());
         var canvas = document.getElementById("CurrWeatherIcon");
-        canvas.width=100;
-        canvas.height=100;
+        canvas.width=85;
+        canvas.height=85;
         var ctx = canvas.getContext("2d");
         var img = new Image();
         img.src = "img/"+json.weather[0].icon+"_bw.png";
         img.src = img.src.replace("n_", "d_");
         img.onload = function () {
-            ctx.drawImage(img, 0, 0, 100, 100);
+            ctx.drawImage(img, 0, 0, 85, 85);
         }
-        var windSpeed = json.wind.speed;
-        var weatherInfo = document.getElementById("WeatherInfo");
-        weatherInfo.innerHTML="";
-        weatherInfo.appendChild(document.createTextNode(Math.round(windSpeed)))
+        // var windSpeed = json.wind.speed;
     });
     var numDays=5;
     $.getJSON("http://api.openweathermap.org/data/2.5/forecast/daily?q="+self.currLoc+"&units=imperial&cnt="+numDays+"&APPID=07ba01a63aa8ffa15eccc5142a1c676b",function(json) {
@@ -103,8 +100,10 @@ function updateSunrise(sunriseDate){
 
 function updateForecast(days){
     var eList = document.getElementById("Forecast");
-    eList.innerHTML="";
-    addForecast(days, eList, 0);
+    var eList2 = document.createElement("table");
+    eList2.innerHTML="";
+    addForecast(days, eList2, 0);
+    eList.innerHTML = eList2.innerHTML;
 }
 
 function addChild(div, part){

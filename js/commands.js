@@ -6,64 +6,17 @@ annyang.start({paused:false});
 
 var tts = function (text) {
     responsiveVoice.speak(text, "US English Female");
-}
+};
 
-var greeting = function() {
-    tts("Hello Joe!")
-}
-
-var sayDate = function () {
-    tts("Today is " + new Date().toDateString()+" .");
-}
-
-var sayTime = function () {
-    var d = new Date();
-    var h = d.getHours();
-    if(h>12)
-        h-=12;
-    var m = d.getMinutes();
-    if(m<10)
-        m = "oh "+m;
-    tts("It is currently " + h + " " + m)
-}
-
-var weHateMom = function () {
-    tts("Yes... We do hate mom!")
-}
-
-var welcome = function () {
-    tts("You are welcome!");
-}
-
-var currTemp = function () {
-    var temp = document.getElementById("CurrTemp").innerHTML;
-    tts(temp+" Fahrenheit");
-}
-
-var sunset = function () {
-    var time = document.getElementById("Sunset").innerHTML;
-    tts("Sunset is at " + time);
-}
-
-var sunrise = function () {
-    var time = document.getElementById("Sunrise").innerHTML;
-    tts("Sunrise is at " + time);
-}
+var wolframCmd = function (text) {
+    console.log(text);
+    $.getJSON("http://api.wolframalpha.com/v2/query?input="+text+"&appid=2U84K3-KP4588JAUQ",function(json) {
+        console.log(json);
+    });
+};
 
 var commands = {
-    'hello':greeting,
-    'hi':greeting,
-    'howdy':greeting,
-    'hey':greeting,
-    'what time is it': sayTime,
-    'what\'s the date': sayDate,
-    'do we hate mom':weHateMom,
-    'thanks':welcome,
-    'what\'s the temperature':currTemp,
-    'when is sunset':sunset,
-    'what time is sunset':sunset,
-    'when is sunrise':sunrise,
-    'what time is sunrise':sunrise,
+    '*input':wolframCmd
 };
 
 var voiceName = 'Rosie';
