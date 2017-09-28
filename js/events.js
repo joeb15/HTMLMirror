@@ -61,7 +61,7 @@ function updateEventTimes(events){
                     ampm="pm";
                 //message = message+ " @ "+hr + " " + ampm;
                 var p = document.createElement("p");
-                p.innerHTML=message;
+                p.innerHTML="<strong>"+message+"</strong>";
                 add(textContent, p);
                 processed.push(event.summary);
             }
