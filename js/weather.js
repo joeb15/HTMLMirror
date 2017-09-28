@@ -2,46 +2,40 @@
  * Created by joe on 6/24/17.
  */
 
-var currLoc = "San Luis Obispo";
+var currLoc = "q=San Luis Obispo";
 var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 function updateWeather(){
-    $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+self.currLoc+"&units=imperial&APPID=07ba01a63aa8ffa15eccc5142a1c676b",function(json){
-        var desc = json.weather[0].description;
-        var temp = Math.round(json.main.temp);
-        // var highTemp = Math.round(json.main.temp_max);
-        // var lowTemp = Math.round(json.main.temp_min);
+    var numDays=5;
+    $.getJSON("http://api.apixu.com/v1/forecast.json?days="+numDays+"&key=27786c582533482bb5b185648172809&"+self.currLoc,function(json){
+        console.log(json);
+        var temp = Math.round(json.current.temp_f);
         document.getElementById("CurrTemp").innerHTML=temp+"&deg;";
-        updateSunset(new Date(json.sys.sunset*1000));
-        updateSunrise(new Date(json.sys.sunrise * 1000));
-        // drawWindIcon();
-        // console.log(sunrise.getHours()+":"+sunrise.getMinutes());
-        // console.log(sunset.getHours()+":"+sunset.getMinutes());
+
+        //updateSunset(new Date(json.sys.sunset*1000));
+        //updateSunrise(new Date(json.sys.sunrise * 1000));
+
         var canvas = document.getElementById("CurrWeatherIcon");
         canvas.width=85;
         canvas.height=85;
         var ctx = canvas.getContext("2d");
         var img = new Image();
-        img.src = "img/"+json.weather[0].icon+"_bw.png";
-        img.src = img.src.replace("n_", "d_");
+        img.src = json.current.condition.icon;
+
         img.onload = function () {
             ctx.drawImage(img, 0, 0, 85, 85);
         }
-        // var windSpeed = json.wind.speed;
-    });
-    var numDays=5;
-    $.getJSON("http://api.openweathermap.org/data/2.5/forecast/daily?q="+self.currLoc+"&units=imperial&cnt="+numDays+"&APPID=07ba01a63aa8ffa15eccc5142a1c676b",function(json) {
+
         var forecast = [];
-        for(var i=0;i<json.list.length;i++){
-            var date = new Date(json.list[i].dt*1000);
-            var highTemp = Math.round(json.list[i].temp.max);
-            var lowTemp = Math.round(json.list[i].temp.min);
+        for(var i=0;i<numDays;i++){
+            var day = json.forecast.forecastday[i];
+            var date = new Date(day.date_epoch*1000);
+            var highTemp = Math.round(day.day.maxtemp_f);
+            var lowTemp = Math.round(day.day.mintemp_f);
+            var icon = day.day.condition.icon;
             var day = days[date.getDay()];
-            var icon = json.list[i].weather[0].icon;
-            var imgsrc = "img/"+icon+"_bw.png";
-            imgsrc = imgsrc.replace("n_","d_");
             forecast.push({
-                src:imgsrc,
+                src:icon,
                 hi:highTemp,
                 lo:lowTemp,
                 day:day
@@ -117,25 +111,29 @@ function addForecast(days, eList, index){
     var textContent = document.createElement("p");
     textContent.innerHTML=curr.day;
     var canvas = document.createElement("canvas");
+    canvas.width=35;
+    canvas.height=35;
+    canvas.id="Canvas"+index;
     var hilo = document.createElement("p");
     hilo.innerHTML = curr.lo +"-"+curr.hi+"&deg;";
     var image = new Image();
     image.src=curr.src;
     var div = document.createElement("tr");
+    var spacer = document.createElement("td");
+    spacer.width="70%"
+    addChild(div, spacer);
+    addChild(div, hilo);
+    addChild(div, canvas);
+    addChild(div, textContent);
+
     image.onload=function () {
-        canvas.width=35;
-        canvas.height=35;
-        var ctx = canvas.getContext("2d");
+        var canvas = document.getElementById("Canvas"+index);
+        var ctx = canvas.getContext('2d');
         ctx.drawImage(image,0, 0, 35, 35);
-
-        addChild(div, hilo);
-        addChild(div, canvas);
-        addChild(div, textContent);
-
-        eList.appendChild(div);
-        if(index+1<days.length) {
-            addForecast(days, eList, index + 1);
-        }
+    };
+    eList.appendChild(div);
+    if(index+1<days.length) {
+        addForecast(days, eList, index + 1);
     }
 }
 

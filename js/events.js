@@ -21,7 +21,7 @@ function updateEventSummaries(events){
             if(processed.indexOf(event.summary)==-1 && event.summary.indexOf("High")==-1){
                 var message = event.summary;
                 var p = document.createElement("p");
-                p.innerHTML=message;
+                p.innerHTML="<strong>"+message+"</strong>";
                 add(textContent, p);
                 processed.push(event.summary);
             }
