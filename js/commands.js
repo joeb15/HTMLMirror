@@ -8,6 +8,10 @@ var tts = function (text) {
     responsiveVoice.speak(text, "US English Female");
 };
 
+vat hello = function() {
+    tts("Hello Joe and Justin");
+};
+
 var wolframCmd = function (text) {
     console.log(text);
     $.getJSON("http://api.wolframalpha.com/v2/query?input="+text+"&appid=2U84K3-KP4588JAUQ",function(json) {
@@ -16,7 +20,7 @@ var wolframCmd = function (text) {
 };
 
 var commands = {
-    '*input':wolframCmd
+    'hello':hello
 };
 
 var voiceName = 'Rosie';

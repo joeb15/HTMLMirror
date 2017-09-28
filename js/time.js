@@ -4,7 +4,7 @@
 
 function updateDate(){
     var d = new Date();
-    var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
     var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     var dateString = days[d.getDay()]+", "+months[d.getMonth()]+" "+d.getDate();
     document.getElementById("TimeDate").innerHTML=dateString;

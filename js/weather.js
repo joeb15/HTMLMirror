@@ -2,7 +2,7 @@
  * Created by joe on 6/24/17.
  */
 
-var currLoc = "Irvine";
+var currLoc = "San Luis Obispo";
 var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 function updateWeather(){
