@@ -8,7 +8,6 @@ var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 function updateWeather(){
     var numDays=5;
     $.getJSON("http://api.apixu.com/v1/forecast.json?days="+numDays+"&key=27786c582533482bb5b185648172809&"+self.currLoc,function(json){
-        console.log(json);
         var temp = Math.round(json.current.temp_f);
         document.getElementById("CurrTemp").innerHTML=temp+"&deg;";
 
@@ -109,19 +108,17 @@ function addChild(div, part){
 function addForecast(days, eList, index){
     var curr = days[index];
     var textContent = document.createElement("p");
-    textContent.innerHTML=curr.day;
+    textContent.innerHTML="<strong>"+curr.day+"</strong>";
     var canvas = document.createElement("canvas");
-    canvas.width=35;
-    canvas.height=35;
+    canvas.width=25;
+    canvas.height=25;
     canvas.id="Canvas"+index;
     var hilo = document.createElement("p");
-    hilo.innerHTML = curr.lo +"-"+curr.hi+"&deg;";
+    hilo.innerHTML = "<strong>"+curr.lo +"-"+curr.hi+"&deg;</strong>";
     var image = new Image();
     image.src=curr.src;
     var div = document.createElement("tr");
-    var spacer = document.createElement("td");
-    spacer.width="70%"
-    addChild(div, spacer);
+    div.style.verticalAlign="top";
     addChild(div, hilo);
     addChild(div, canvas);
     addChild(div, textContent);
@@ -129,7 +126,7 @@ function addForecast(days, eList, index){
     image.onload=function () {
         var canvas = document.getElementById("Canvas"+index);
         var ctx = canvas.getContext('2d');
-        ctx.drawImage(image,0, 0, 35, 35);
+        ctx.drawImage(image,0, 0, 25, 25);
     };
     eList.appendChild(div);
     if(index+1<days.length) {

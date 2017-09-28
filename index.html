@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/main.css">
         <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
         <style>
-            body, tr, td, p{
+            body, tr, td, p, canvas{
                 background-color: black;
                 -webkit-text-stroke-color: white;
                 -webkit-text-fill-color: white;
@@ -22,6 +22,7 @@
                 padding: 0%;
                 font-family: Arial;
                 line-height: 85%;
+                vertical-align: top;
             }
             table{
                 margin-bottom: 10px;
@@ -31,12 +32,15 @@
             /*TOP ROW*/
             #TimeDate{
                 float:left;
+                padding-top: 10px;
                 font-size: 50px;
+                vertical-align: top;
             }
             #SunsetTime, #SunsetIcon{
                 float: right;
                 font-size: 50px;
                 line-height: 85%;
+                display: none;
             }
 
             /*SECOND ROW*/
@@ -61,17 +65,18 @@
             /*Forecast*/
             #Forecast > tr > td{
                 float: right;
-                font-size: 35px;
+                font-size: 25px;
                 line-height: 85%;
                 align-content: center;
             }
             #Forecast{
+                font-size: 25px;
                 margin-top: 20px;
             }
 
             /*Events*/
             #Events > td > table > tr > td > p{
-                font-size: 35px;
+                font-size: 25px;
                 line-height: 100%;
             }
             #Events{
@@ -135,6 +140,9 @@
                 <td>
                     <p id="TimeDate">TimeDate</p>
                 </td>
+                <td>
+                    <table id="Forecast"></table>
+                </td>
                 <td style="float: right">
                     <canvas id="SunsetIcon"></canvas>
                 </td>
@@ -144,7 +152,6 @@
             </tr>
         </table>
 
-        <table id="Forecast"></table>
         <table><tr id="Events"></tr></table>
 
         <!--<script src='https://code.responsivevoice.org/responsivevoice.js'></script>-->
