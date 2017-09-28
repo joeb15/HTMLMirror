@@ -11,8 +11,8 @@ updateWeather();
     UPDATE ALL VALUES AT SPECIFIC INTERVALS
  */
 
-setInterval(updateTime,         500);           //Update the time every 1/2 second
-setInterval(updateDate,         60000);         //Update the day every 60 seconds
-setInterval(listUpcomingEvents, 60000);         //Update the event list every 60 seconds
-setInterval(updateWeather,      60000);         //Update the weather every 60 seconds
+setInterval(updateTime,         .5*1000);           //Update the time every 1/2 second
+setInterval(updateDate,         60*1000);         //Update the day every 60 seconds
+setInterval(listUpcomingEvents, 60*1000);         //Update the event list every 60 seconds
+setInterval(updateWeather,      60*60*1000);         //Update the weather every hour
 //setInterval(renderWaveform,     125);
