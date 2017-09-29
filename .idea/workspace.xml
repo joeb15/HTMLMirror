@@ -53,8 +53,8 @@
       <file leaf-file-name="events.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/events.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+            <state relative-caret-position="612">
+              <caret line="48" column="59" lean-forward="false" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="gapi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/gapi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
+            <state relative-caret-position="1020">
               <caret line="60" column="46" lean-forward="true" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
               <folding />
             </state>
@@ -199,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -216,7 +217,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,7 +350,8 @@
       <workItem from="1501699927960" duration="1591000" />
       <workItem from="1501704847556" duration="1149000" />
       <workItem from="1506628224109" duration="2678000" />
-      <workItem from="1506671284749" duration="41000" />
+      <workItem from="1506671284749" duration="65000" />
+      <workItem from="1506671419321" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="Final Touches">
       <created>1498882579303</created>
@@ -513,11 +514,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506655037214</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Make 8 Events Show instead of 5">
+      <created>1506671342240</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1506671342240</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141426000" />
+    <option name="totallyTimeSpent" value="141457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="971" height="1046" extended-state="0" />
@@ -573,7 +581,8 @@
     <MESSAGE value="Make event days bold" />
     <MESSAGE value="Sort Events Correctly" />
     <MESSAGE value="Add Roommates Calendar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Roommates Calendar" />
+    <MESSAGE value="Make 8 Events Show instead of 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make 8 Events Show instead of 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -889,7 +898,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/gapi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="1020">
           <caret line="60" column="46" lean-forward="true" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
           <folding />
         </state>
@@ -897,8 +906,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/events.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        <state relative-caret-position="612">
+          <caret line="48" column="59" lean-forward="false" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
           <folding />
         </state>
       </provider>
