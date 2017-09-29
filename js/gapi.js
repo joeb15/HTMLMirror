@@ -41,7 +41,8 @@ function listUpcomingEvents() {
         'en.usa#holiday@group.v.calendar.google.com',
         '#contacts@group.v.calendar.google.com',
         '93694c2fjlu127r1n8kokia0i0@group.calendar.google.com',
-        '2uavfqbsdod38j8vt4lhogtlao@group.calendar.google.com'],
+        '2uavfqbsdod38j8vt4lhogtlao@group.calendar.google.com',
+        'rud5s7o8msm78p568ee1i0d3n4@group.calendar.google.com'],
         doneLoading
     );
 }

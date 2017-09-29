@@ -73,8 +73,8 @@
       <file leaf-file-name="gapi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/gapi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="73" column="55" lean-forward="false" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+            <state relative-caret-position="228">
+              <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -349,7 +349,7 @@
       <workItem from="1501699784666" duration="126000" />
       <workItem from="1501699927960" duration="1591000" />
       <workItem from="1501704847556" duration="1149000" />
-      <workItem from="1506628224109" duration="1923000" />
+      <workItem from="1506628224109" duration="2633000" />
     </task>
     <task id="LOCAL-00001" summary="Final Touches">
       <created>1498882579303</created>
@@ -498,11 +498,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506628454454</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Sort Events Correctly">
+      <created>1506654207183</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1506654207183</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140630000" />
+    <option name="totallyTimeSpent" value="141340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="971" height="1046" extended-state="0" />
@@ -556,7 +563,8 @@
     <MESSAGE value="San Luis Obispo Cleanup #2" />
     <MESSAGE value="Update weather less often" />
     <MESSAGE value="Make event days bold" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make event days bold" />
+    <MESSAGE value="Sort Events Correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sort Events Correctly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/gapi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="73" column="55" lean-forward="false" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+        <state relative-caret-position="228">
+          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
           <folding />
         </state>
       </provider>
