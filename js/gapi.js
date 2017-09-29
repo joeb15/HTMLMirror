@@ -48,12 +48,13 @@ function listUpcomingEvents() {
 
 function doneLoading(){
     self.events.sort(function(a, b) {
-        return a.time - b.time;
+        return a.date.toJSON() > b.date.toJSON() ? 1 : a.date.toJSON() == b.date.toJSON() ? 0 : -1;
     });
     onEventListUpdated(self.events);
 }
 
 function addCalendars(calendarIDs, cb) {
+    var curr = new Date().getTime();
     if(calendarIDs.length>0){
         gapi.client.calendar.events.list({
             'calendarId': calendarIDs.shift(),
@@ -70,11 +71,9 @@ function addCalendars(calendarIDs, cb) {
                     when = event.start.dateTime;
                 }
                 var d = new Date(when);
-                var timeDiff = Math.abs(new Date().getTime() - d.getTime());
-                var diffDays = Math.floor(timeDiff / (1000 * 3600 * 24));
-                self.events.push({summary:event.summary,time:diffDays,date:d});
+                self.events.push({summary:event.summary,date:d});
             }
-            addCalendars(calendarIDs, cb)
+            addCalendars(calendarIDs, cb);
         });
     }else{
         cb();

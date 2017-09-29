@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3843fa4d-d398-4850-9e86-099a283accd8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/events.js" afterPath="$PROJECT_DIR$/js/events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/gapi.js" afterPath="$PROJECT_DIR$/js/gapi.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="527">
+              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="events.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/events.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+            <state relative-caret-position="204">
+              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -63,8 +63,18 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="255">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gapi.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/gapi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="73" column="55" lean-forward="false" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -116,7 +126,6 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/js/waveform.js" />
         <option value="$PROJECT_DIR$/public/js/commands.js" />
-        <option value="$PROJECT_DIR$/js/gapi.js" />
         <option value="$PROJECT_DIR$/js/waveform.js" />
         <option value="$PROJECT_DIR$/stats.html" />
         <option value="$PROJECT_DIR$/js/graph.js" />
@@ -126,6 +135,7 @@
         <option value="$PROJECT_DIR$/js/weather.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/events.js" />
+        <option value="$PROJECT_DIR$/js/gapi.js" />
       </list>
     </option>
   </component>
@@ -339,7 +349,7 @@
       <workItem from="1501699784666" duration="126000" />
       <workItem from="1501699927960" duration="1591000" />
       <workItem from="1501704847556" duration="1149000" />
-      <workItem from="1506628224109" duration="214000" />
+      <workItem from="1506628224109" duration="1923000" />
     </task>
     <task id="LOCAL-00001" summary="Final Touches">
       <created>1498882579303</created>
@@ -481,11 +491,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506628306415</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Make event days bold">
+      <created>1506628454454</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1506628454454</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138921000" />
+    <option name="totallyTimeSpent" value="140630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="971" height="1046" extended-state="0" />
@@ -538,7 +555,8 @@
     <MESSAGE value="San Luis Obispo Cleanup #1" />
     <MESSAGE value="San Luis Obispo Cleanup #2" />
     <MESSAGE value="Update weather less often" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update weather less often" />
+    <MESSAGE value="Make event days bold" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make event days bold" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -772,13 +790,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json" />
     <entry file="file://$PROJECT_DIR$/GLaDOS.tts" />
-    <entry file="file://$PROJECT_DIR$/js/gapi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stats.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -827,8 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="527">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -844,14 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/weather.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -862,10 +865,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/events.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="73" column="55" lean-forward="false" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
           <folding />
         </state>
       </provider>
