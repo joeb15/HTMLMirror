@@ -45,6 +45,7 @@ function updateEventTimes(events){
     var eList = document.getElementById("Events");
     eList.innerHTML="";
     var textContent = document.createElement("td");
+    var timeContent = document.createElement("td");
     if(events.length>0){
         for (i = 0; i < events.length && processed.length<8; i++) {
             var event = events[i];
@@ -63,9 +64,14 @@ function updateEventTimes(events){
                 var p = document.createElement("p");
                 p.innerHTML="<strong>"+message+"</strong>";
                 add(textContent, p);
+                var p2 = document.createElement("p");
+                p2.innerHTML="<strong> @"+hr+ampm+"</strong>";
+                add(timeContent, p2);
                 processed.push(event.summary);
             }
         }
     }
     eList.appendChild(textContent);
+    timeContent.setAttribute("id","EventTimeHour");
+    eList.appendChild(timeContent);
 }

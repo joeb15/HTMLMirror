@@ -3,7 +3,7 @@
  */
 
 var currLoc = "q=San Luis Obispo";
-var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+var days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 function updateWeather(){
     var numDays=5;
