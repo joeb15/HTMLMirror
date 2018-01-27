@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3843fa4d-d398-4850-9e86-099a283accd8" name="Default" comment="Make 8 Dates Show instead of 5">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tempManager.sh" />
+    <list default="true" id="3843fa4d-d398-4850-9e86-099a283accd8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/tempManager.sh" afterPath="$PROJECT_DIR$/tempManager.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +41,8 @@
       <file leaf-file-name="tempManager.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tempManager.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <state relative-caret-position="153">
+              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -386,7 +386,7 @@
       <workItem from="1515612140370" duration="13000" />
       <workItem from="1517022562344" duration="73000" />
       <workItem from="1517035028204" duration="757000" />
-      <workItem from="1517035801972" duration="8000" />
+      <workItem from="1517035801972" duration="717000" />
     </task>
     <task id="LOCAL-00001" summary="Final Touches">
       <created>1498882579303</created>
@@ -563,11 +563,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506671436271</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="temperatureManager">
+      <created>1517035820821</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1517035820821</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151616000" />
+    <option name="totallyTimeSpent" value="152325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -626,7 +633,8 @@
     <MESSAGE value="Add Roommates Calendar" />
     <MESSAGE value="Make 8 Events Show instead of 5" />
     <MESSAGE value="Make 8 Dates Show instead of 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make 8 Dates Show instead of 5" />
+    <MESSAGE value="temperatureManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="temperatureManager" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -939,8 +947,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tempManager.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        <state relative-caret-position="153">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding />
         </state>
       </provider>
