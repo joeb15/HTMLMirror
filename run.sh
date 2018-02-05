@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PID=$(python -m SimpleHTTPServer 8000)
+PID=$(python -m SimpleHTTPServer 8000&)
 
 while true; do
     pull=`git pull`
