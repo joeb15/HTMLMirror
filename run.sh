@@ -11,4 +11,5 @@ while true; do
     done
     kill PID
     PID=$(python -m SimpleHTTPServer 8000)
+    echo ${PID}
 done
