@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3843fa4d-d398-4850-9e86-099a283accd8" name="Default" comment="">
+    <list default="true" id="3843fa4d-d398-4850-9e86-099a283accd8" name="Default" comment="Display Message">
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/displayMessage.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/js/events.js" afterPath="$PROJECT_DIR$/js/events.js" />
-      <change beforePath="$PROJECT_DIR$/js/weather.js" afterPath="$PROJECT_DIR$/js/weather.js" />
-      <change beforePath="$PROJECT_DIR$/run.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change beforePath="$PROJECT_DIR$/runOnUpdate.sh" afterPath="$PROJECT_DIR$/runOnUpdate.sh" />
-      <change beforePath="$PROJECT_DIR$/tempManager.sh" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+            <state relative-caret-position="313">
+              <caret line="177" column="9" lean-forward="false" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -37,16 +36,17 @@
                 <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#2;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#3;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runOnUpdate.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="runOnUpdate.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runOnUpdate.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,8 +67,8 @@
       <file leaf-file-name="events.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/events.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+            <state relative-caret-position="232">
+              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -77,8 +77,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,8 +87,8 @@
       <file leaf-file-name="gapi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/gapi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="46" lean-forward="false" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+            <state relative-caret-position="249">
+              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -145,14 +145,15 @@
         <option value="$PROJECT_DIR$/js/graph.js" />
         <option value="$PROJECT_DIR$/js/time.js" />
         <option value="$PROJECT_DIR$/js/commands.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/gapi.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/run.sh" />
         <option value="$PROJECT_DIR$/tempManager.sh" />
         <option value="$PROJECT_DIR$/js/weather.js" />
-        <option value="$PROJECT_DIR$/runOnUpdate.sh" />
         <option value="$PROJECT_DIR$/js/events.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/displayMessage.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/runOnUpdate.sh" />
       </list>
     </option>
   </component>
@@ -247,12 +248,12 @@
     <property name="nodejs_interpreter_path" value="node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img/orig" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -385,7 +386,7 @@
       <workItem from="1517035028204" duration="757000" />
       <workItem from="1517035801972" duration="879000" />
       <workItem from="1517810167638" duration="5943000" />
-      <workItem from="1517866450469" duration="397000" />
+      <workItem from="1517866450469" duration="1464000" />
     </task>
     <task id="LOCAL-00001" summary="Final Touches">
       <created>1498882579303</created>
@@ -709,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517816732963</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Update Weather min/max to contain current value if there is a high/low">
+      <created>1517866875636</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1517866875636</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158827000" />
+    <option name="totallyTimeSpent" value="159894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -721,6 +729,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20572917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -730,7 +739,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13854167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -748,8 +756,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final Touches" />
-    <MESSAGE value="Better Layout&#10;Waveform Integration" />
     <MESSAGE value="New Calendars added.&#10;Wind and Sunset Display" />
     <MESSAGE value="Formatting Improved" />
     <MESSAGE value="Weather Sizing&#10;Event Summary Text Align" />
@@ -773,7 +779,9 @@
     <MESSAGE value="Make 8 Dates Show instead of 5" />
     <MESSAGE value="temperatureManager" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Update Weather min/max to contain current value if there is a high/low" />
+    <MESSAGE value="Display Message" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display Message" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -782,13 +790,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -954,6 +955,7 @@
             <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#3;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1016,22 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/gapi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="46" lean-forward="false" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1058,10 +1044,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/displayMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runOnUpdate.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        <state relative-caret-position="313">
+          <caret line="177" column="9" lean-forward="false" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1073,23 +1099,8 @@
             <element signature="n#style#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#3;n#tr#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runOnUpdate.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
