@@ -1,10 +1,7 @@
-
-var displayMessage = document.getElementById("Display Message");
-
 function showMessage(){
-    displayMessage.style.display="block";
+    document.getElementById("Display Message").style.display="block";
 }
 
 function clearMessage(){
-    displayMessage.style.display="none";
+    document.getElementById("Display Message").style.display="none";
 }
