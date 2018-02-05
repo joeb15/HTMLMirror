@@ -41,8 +41,8 @@
       <file leaf-file-name="run.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -489,7 +489,7 @@
       <workItem from="1517022562344" duration="73000" />
       <workItem from="1517035028204" duration="757000" />
       <workItem from="1517035801972" duration="879000" />
-      <workItem from="1517810167638" duration="2202000" />
+      <workItem from="1517810167638" duration="2409000" />
     </task>
     <task id="LOCAL-00001" summary="Final Touches">
       <created>1498882579303</created>
@@ -715,11 +715,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517811568886</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="temperatureManager">
+      <created>1517812945718</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1517812945718</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154689000" />
+    <option name="totallyTimeSpent" value="154896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1092,8 +1099,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding />
         </state>
       </provider>
