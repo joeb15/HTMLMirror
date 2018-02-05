@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3843fa4d-d398-4850-9e86-099a283accd8" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/runOnUpdate.sh" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/tempManager.sh" afterPath="$PROJECT_DIR$/tempManager.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,11 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tempManager.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tempManager.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tempManager.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="153">
+              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runOnUpdate.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/runOnUpdate.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,6 +168,7 @@
         <option value="$PROJECT_DIR$/js/events.js" />
         <option value="$PROJECT_DIR$/run.sh" />
         <option value="$PROJECT_DIR$/tempManager.sh" />
+        <option value="$PROJECT_DIR$/runOnUpdate.sh" />
       </list>
     </option>
   </component>
@@ -499,7 +510,7 @@
       <workItem from="1517022562344" duration="73000" />
       <workItem from="1517035028204" duration="757000" />
       <workItem from="1517035801972" duration="879000" />
-      <workItem from="1517810167638" duration="2645000" />
+      <workItem from="1517810167638" duration="2989000" />
     </task>
     <task id="LOCAL-00001" summary="Final Touches">
       <created>1498882579303</created>
@@ -739,11 +750,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517813152609</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="test">
+      <created>1517813391035</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1517813391035</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155132000" />
+    <option name="totallyTimeSpent" value="155476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -778,7 +796,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Massive Overhaul" />
     <MESSAGE value="Final Touches" />
     <MESSAGE value="Better Layout&#10;Waveform Integration" />
     <MESSAGE value="New Calendars added.&#10;Wind and Sunset Display" />
@@ -803,7 +820,8 @@
     <MESSAGE value="Make 8 Events Show instead of 5" />
     <MESSAGE value="Make 8 Dates Show instead of 5" />
     <MESSAGE value="temperatureManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="temperatureManager" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,13 +830,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
@@ -1116,8 +1127,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tempManager.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="153">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runOnUpdate.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
