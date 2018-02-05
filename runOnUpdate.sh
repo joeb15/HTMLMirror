@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo TESTING
+echo Updated Weather min/max values

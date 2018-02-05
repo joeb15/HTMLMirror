@@ -47,7 +47,7 @@ function updateEventTimes(events){
     var textContent = document.createElement("td");
     var timeContent = document.createElement("td");
     if(events.length>0){
-        for (i = 0; i < events.length && processed.length<8; i++) {
+        for (var i = 0; i < events.length && processed.length<8; i++) {
             var event = events[i];
             if(processed.indexOf(event.summary)==-1 && event.summary.indexOf("High")==-1){
                 var month = (event.date.getMonth());

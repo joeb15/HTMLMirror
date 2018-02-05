@@ -31,6 +31,12 @@ function updateWeather(){
             var date = new Date(day.date_epoch*1000);
             var highTemp = Math.round(day.day.maxtemp_f);
             var lowTemp = Math.round(day.day.mintemp_f);
+            if(i===0){
+                if(temp>highTemp)
+                    highTemp=temp;
+                if(temp<lowTemp)
+                    lowTemp=temp;
+            }
             var icon = day.day.condition.icon;
             var day = days[date.getDay()];
             forecast.push({
