@@ -1,13 +1,14 @@
 #!/bin/bash
 
-fileName = "showImage"
+PID=$(python -m SimpleHTTPServer 8000)
 
 while true; do
-    ssh server "test -e showImage"
-    if [ $? -eq 0 ]; then
-        scp server:cam.jpg cam.jpg
-        echo "{on:true}">> ${fileName}
-    else
-        echo "{on:false}">> ${fileName}
-    fi
+    echo Updating
+    git diff
+    while $?; do
+        git diff
+        sleep 10
+    done
+    kill PID
+    PID=$(python -m SimpleHTTPServer 8000)
 done
