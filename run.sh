@@ -1,15 +1,20 @@
 #!/bin/bash
 
+UPSTREAM=${1:-'@{u}'}
+LOCAL=$(git rev-parse @)
+BASE=$(git merge-base @ "$UPSTREAM")
+
 PID=$(python -m SimpleHTTPServer 8000&)
+trap 'kill $PID' 2
 
 while true; do
     pull=`git pull`
     echo $pull
-    until [ $pull = "Already up-to-date." ]; do
+    until [ $LOCAL = $BASE ]; do
         sleep 10
     done
     echo Updating
-    kill PID
+    kill $PID
     PID=$(python -m SimpleHTTPServer 8000&)
-    echo New server running on process ${PID}
+    echo $PID
 done
