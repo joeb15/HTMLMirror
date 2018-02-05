@@ -3,13 +3,12 @@
 PID=$(python -m SimpleHTTPServer 8000)
 
 while true; do
-    echo Updating
-    git diff
-    while $?; do
-        git diff
+    pull=`git pull`
+    until [ ${pull} = "Already up-to-date." ]; do
         sleep 10
     done
+    echo Updating
     kill PID
     PID=$(python -m SimpleHTTPServer 8000)
-    echo ${PID}
+    echo New server running on process ${PID}
 done
