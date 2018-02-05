@@ -1,3 +1,3 @@
 #!/bin/bash
 
-touch test2
+echo updated
