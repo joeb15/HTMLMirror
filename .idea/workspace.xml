@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3843fa4d-d398-4850-9e86-099a283accd8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/runOnUpdate.sh" afterPath="$PROJECT_DIR$/runOnUpdate.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/runOnUpdate.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -170,8 +169,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1556" />
-    <option name="y" value="-16" />
+    <option name="x" value="-363" />
+    <option name="y" value="-24" />
     <option name="width" value="1942" />
     <option name="height" value="1056" />
   </component>
@@ -216,6 +215,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,7 +232,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,14 +383,8 @@
       <workItem from="1517866450469" duration="3574000" />
       <workItem from="1518297019317" duration="162000" />
       <workItem from="1519120295250" duration="17000" />
-      <workItem from="1519982948785" duration="14000" />
-    </task>
-    <task id="LOCAL-00003" summary="New Calendars added.&#10;Wind and Sunset Display">
-      <created>1499643923786</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1499643923786</updated>
+      <workItem from="1519982948785" duration="60000" />
+      <workItem from="1520401205729" duration="5000" />
     </task>
     <task id="LOCAL-00004" summary="Formatting Improved">
       <created>1499644565621</created>
@@ -729,14 +722,21 @@
       <option name="project" value="LOCAL" />
       <updated>1517869645591</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Make display message last longer">
+      <created>1519982966755</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1519982966756</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162197000" />
+    <option name="totallyTimeSpent" value="162248000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20572917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1073,7 +1073,7 @@
     <entry file="file://$PROJECT_DIR$/runOnUpdate.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
