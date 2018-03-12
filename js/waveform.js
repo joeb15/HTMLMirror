@@ -26,7 +26,7 @@ function renderWaveform() {
     waveformContext.lineWidth = 5;
 
     waveformContext.beginPath();
-    if (!responsiveVoice.isPlaying()) {
+    if (true) {
         waveformContext.lineTo(width / 2 - waveformWidth / 2, height / 2-maxHeight/2);
         waveformContext.lineTo(width / 2 + waveformWidth / 2, height / 2-maxHeight/2);
         shouldClear++;
