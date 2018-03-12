@@ -17,4 +17,4 @@ setInterval(updateTime,         .5*1000);           //Update the time every 1/2 
 setInterval(updateDate,         60*1000);         //Update the day every 60 seconds
 setInterval(listUpcomingEvents, 60*1000);         //Update the event list every 60 seconds
 setInterval(updateWeather,      20*60*1000);         //Update the weather every hour
-//setInterval(renderWaveform,     125);
+setInterval(renderWaveform,     125);
