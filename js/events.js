@@ -41,34 +41,30 @@ function add(td, p){
 }
 
 function updateEventTimes(events){
-    var processed = [];
     var eList = document.getElementById("Events");
     eList.innerHTML="";
     var textContent = document.createElement("td");
     var timeContent = document.createElement("td");
     if(events.length>0){
-        for (var i = 0; i < events.length && processed.length<8; i++) {
+        for (var i = 0; i < events.length && i < 8; i++) {
             var event = events[i];
-            if(processed.indexOf(event.summary)===-1){
-                var month = (event.date.getMonth());
-                month = months[month];
-                var day = (event.date.getDate()+1);
-                var message = month+" "+day;
-                var hr = event.date.getHours()%12+1;
-                var ampm = event.date.getHours()/12;
-                if(ampm<1)
-                    ampm="am";
-                else
-                    ampm="pm";
-                //message = message+ " @ "+hr + " " + ampm;
-                var p = document.createElement("p");
-                p.innerHTML="<strong>"+message+"</strong>";
-                add(textContent, p);
-                var p2 = document.createElement("p");
-                p2.innerHTML="<strong> @"+hr+ampm+"</strong>";
-                add(timeContent, p2);
-                processed.push(event.summary);
-            }
+            var month = (event.date.getMonth());
+            month = months[month];
+            var day = (event.date.getDate()+1);
+            var message = month+" "+day;
+            var hr = event.date.getHours()%12+1;
+            var ampm = event.date.getHours()/12;
+            if(ampm<1)
+                ampm="am";
+            else
+                ampm="pm";
+            //message = message+ " @ "+hr + " " + ampm;
+            var p = document.createElement("p");
+            p.innerHTML="<strong>"+message+"</strong>";
+            add(textContent, p);
+            var p2 = document.createElement("p");
+            p2.innerHTML="<strong> @"+hr+ampm+"</strong>";
+            add(timeContent, p2);
         }
     }
     eList.appendChild(textContent);
