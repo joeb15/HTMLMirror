@@ -35,6 +35,7 @@ function handleAuthClick(event) {
 }
 
 function listUpcomingEvents() {
+    return;
     self.events=[];
     addCalendars([
         'primary',
